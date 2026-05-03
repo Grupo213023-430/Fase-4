@@ -1,0 +1,18 @@
+[2026-05-02 00:28:34] [INFO] [SoftwareFJ] - === INICIO DE PRUEBAS DE LA BASE ===
+[2026-05-02 00:28:34] [INFO] [SoftwareFJ] - Cliente creado correctamente -> id=084424e7, nombre=Sergio Esteban Duque Daza, cedula=1121930202
+[2026-05-02 00:28:34] [ERROR] [SoftwareFJ] - Intento de crear cliente con nombre vacio
+[2026-05-02 00:28:34] [ERROR] [SoftwareFJ] - Cedula con letras: 'ABC123'
+[2026-05-02 00:28:34] [ERROR] [SoftwareFJ] - Correo mal escrito: 'correo-malo'
+[2026-05-02 00:28:34] [ERROR] [SoftwareFJ] - Edad fuera del rango: 15
+[2026-05-02 00:28:34] [ERROR] [SoftwareFJ] - Edad no se puede convertir a numero: 'treinta' | Tipo: ValueError | Detalle: invalid literal for int() with base 10: 'treinta'
+[2026-05-02 00:28:34] [INFO] [SoftwareFJ] - Cliente creado correctamente -> id=78bce723, nombre=Maria Gomez, cedula=9988776
+[2026-05-02 00:28:34] [INFO] [SoftwareFJ] - === FIN DE PRUEBAS ===
+[2026-05-03 05:51:12] [INFO] [SoftwareFJ] - === INICIO DE PRUEBAS DE LA BASE ===
+[2026-05-03 05:51:12] [INFO] [SoftwareFJ] - Cliente creado correctamente -> id=15c5d533, nombre=Sergio Esteban Duque Daza, cedula=1121930202
+[2026-05-03 05:51:12] [ERROR] [SoftwareFJ] - Intento de crear cliente con nombre vacio
+[2026-05-03 05:51:12] [ERROR] [SoftwareFJ] - Cedula con letras: 'ABC123'
+[2026-05-03 05:51:12] [ERROR] [SoftwareFJ] - Correo mal escrito: 'correo-malo'
+[2026-05-03 05:51:12] [ERROR] [SoftwareFJ] - Edad fuera del rango: 15
+[2026-05-03 05:51:12] [ERROR] [SoftwareFJ] - Edad no se puede convertir a numero: 'treinta' | Tipo: ValueError | Detalle: invalid literal for int() with base 10: 'treinta'
+[2026-05-03 05:51:12] [INFO] [SoftwareFJ] - Cliente creado correctamente -> id=956df07b, nombre=Maria Gomez, cedula=9988776
+[2026-05-03 05:51:12] [INFO] [SoftwareFJ] - === FIN DE PRUEBAS ===
