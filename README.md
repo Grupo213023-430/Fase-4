@@ -6,7 +6,7 @@ Es un sistema en python para gestionar clientes, servicios y reservas de la empr
 
 ## Integrantes del grupo
 
-- Sergio Esteban Duque Daza - CC 1121930202 (lider)
+- Sergio Esteban Duque Daza -  (lider)
 - Irma Leticia Coello Angarita
 - Alan Correa Mendes
 
