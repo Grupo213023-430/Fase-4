@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
-from excepciones import ServicioNoDisponibleError, ParametroServicioInvalidoError
-from logger import registrar_evento
+from excepcion import ServicioNoDisponibleError, ParametroServicioInvalidoError
+from logging import registrar_evento
 
 
 class Servicio(ABC):
