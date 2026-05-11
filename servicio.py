@@ -18,7 +18,7 @@ Se aplican conceptos de:
 - Sobrecarga de métodos
 - Integración con logger
 
-Autor: Alan Correa
+Autor: Leticia coello
 Curso: Programación Orientada a Objetos - Fase 4
 Universidad Nacional Abierta y a Distancia (UNAD)
 """
