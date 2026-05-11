@@ -1,18 +1,18 @@
-[2026-05-02 00:28:34] [INFO] [SoftwareFJ] - === INICIO DE PRUEBAS DE LA BASE ===
-[2026-05-02 00:28:34] [INFO] [SoftwareFJ] - Cliente creado correctamente -> id=084424e7, nombre=Sergio Esteban Duque Daza, cedula=1121930202
-[2026-05-02 00:28:34] [ERROR] [SoftwareFJ] - Intento de crear cliente con nombre vacio
-[2026-05-02 00:28:34] [ERROR] [SoftwareFJ] - Cedula con letras: 'ABC123'
-[2026-05-02 00:28:34] [ERROR] [SoftwareFJ] - Correo mal escrito: 'correo-malo'
-[2026-05-02 00:28:34] [ERROR] [SoftwareFJ] - Edad fuera del rango: 15
-[2026-05-02 00:28:34] [ERROR] [SoftwareFJ] - Edad no se puede convertir a numero: 'treinta' | Tipo: ValueError | Detalle: invalid literal for int() with base 10: 'treinta'
-[2026-05-02 00:28:34] [INFO] [SoftwareFJ] - Cliente creado correctamente -> id=78bce723, nombre=Maria Gomez, cedula=9988776
-[2026-05-02 00:28:34] [INFO] [SoftwareFJ] - === FIN DE PRUEBAS ===
-[2026-05-03 05:51:12] [INFO] [SoftwareFJ] - === INICIO DE PRUEBAS DE LA BASE ===
-[2026-05-03 05:51:12] [INFO] [SoftwareFJ] - Cliente creado correctamente -> id=15c5d533, nombre=Sergio Esteban Duque Daza, cedula=1121930202
-[2026-05-03 05:51:12] [ERROR] [SoftwareFJ] - Intento de crear cliente con nombre vacio
-[2026-05-03 05:51:12] [ERROR] [SoftwareFJ] - Cedula con letras: 'ABC123'
-[2026-05-03 05:51:12] [ERROR] [SoftwareFJ] - Correo mal escrito: 'correo-malo'
-[2026-05-03 05:51:12] [ERROR] [SoftwareFJ] - Edad fuera del rango: 15
-[2026-05-03 05:51:12] [ERROR] [SoftwareFJ] - Edad no se puede convertir a numero: 'treinta' | Tipo: ValueError | Detalle: invalid literal for int() with base 10: 'treinta'
-[2026-05-03 05:51:12] [INFO] [SoftwareFJ] - Cliente creado correctamente -> id=956df07b, nombre=Maria Gomez, cedula=9988776
-[2026-05-03 05:51:12] [INFO] [SoftwareFJ] - === FIN DE PRUEBAS ===
+
+[2026-05-11 09:03:50] [INFO] [SoftwareFJ] - === INICIO DEL SISTEMA ===
+[2026-05-11 09:03:50] [INFO] [SoftwareFJ] - Cliente creado correctamente -> id=342172be, nombre=Carlos Perez, cedula=1234567
+[2026-05-11 09:03:50] [ERROR] [SoftwareFJ] - Intento de crear cliente con nombre vacio
+[2026-05-11 09:03:50] [ERROR] [SoftwareFJ] - Error controlado | Tipo: CampoObligatorioError | Detalle: El campo 'nombre' no puede estar vacio
+[2026-05-11 09:03:50] [ERROR] [SoftwareFJ] - Cedula con letras: 'ABC123'
+[2026-05-11 09:03:50] [ERROR] [SoftwareFJ] - Error controlado | Tipo: ClienteInvalidoError | Detalle: La cedula solo puede tener numeros: 'ABC123'
+[2026-05-11 09:03:50] [ERROR] [SoftwareFJ] - Error controlado | Tipo: ParametroServicioInvalidoError | Detalle: El precio base debe ser mayor a cero
+[2026-05-11 09:03:50] [INFO] [SoftwareFJ] - Reserva creada -> Cliente: Carlos Perez
+[2026-05-11 09:03:50] [INFO] [SoftwareFJ] - Cálculo exitoso reserva sala: 113050.0
+[2026-05-11 09:03:50] [INFO] [SoftwareFJ] - Reserva confirmada -> Cliente: Carlos Perez, Total: 113050.0
+[2026-05-11 09:03:50] [ERROR] [SoftwareFJ] - Error controlado | Tipo: ReservaInvalidaError | Detalle: La cantidad debe ser mayor a cero
+[2026-05-11 09:03:50] [INFO] [SoftwareFJ] - Reserva creada -> Cliente: Carlos Perez
+[2026-05-11 09:03:50] [ERROR] [SoftwareFJ] - Servicio no disponible: Servicio apagado
+[2026-05-11 09:03:50] [ERROR] [SoftwareFJ] - Error controlado | Tipo: ServicioNoDisponibleError | Detalle: El servicio 'Servicio apagado' no está disponible
+[2026-05-11 09:03:50] [INFO] [SoftwareFJ] - Reserva cancelada -> Cliente: Carlos Perez
+[2026-05-11 09:03:50] [ERROR] [SoftwareFJ] - Error controlado | Tipo: EstadoReservaError | Detalle: Solo se procesan reservas confirmadas
+[2026-05-11 09:03:50] [INFO] [SoftwareFJ] - === FIN DEL SISTEMA ===

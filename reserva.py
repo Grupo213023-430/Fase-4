@@ -8,20 +8,23 @@ para los diferentes servicios ofrecidos por la empresa.
 
 Se aplican conceptos de:
 - Encapsulación
-- Manejo de excepciones
+- Herencia
+- Polimorfismo
+- Manejo avanzado de excepciones
 - Integración con logger
 - Validaciones
-- Polimorfismo
-- Manejo de estados
 
 Autor: Alan Correa
 Curso: Programación Orientada a Objetos - Fase 4
 Universidad Nacional Abierta y a Distancia (UNAD)
 """
 
+from cliente import EntidadBase
+
 from excepciones import (
     ReservaInvalidaError,
-    EstadoReservaError
+    EstadoReservaError,
+    SoftwareFJError
 )
 
 from logger import (
@@ -30,9 +33,11 @@ from logger import (
 )
 
 
-class Reserva:
+class Reserva(EntidadBase):
 
     def __init__(self, cliente, servicio, cantidad):
+
+        super().__init__()
 
         if cliente is None:
             raise ReservaInvalidaError(
@@ -61,9 +66,9 @@ class Reserva:
             f"Reserva creada -> Cliente: {self._cliente.nombre}"
         )
 
-    # ==============================
+    # ======================================
     # PROPERTIES
-    # ==============================
+    # ======================================
 
     @property
     def cliente(self):
@@ -85,9 +90,9 @@ class Reserva:
     def total(self):
         return self._total
 
-    # ==============================
-    # MÉTODOS
-    # ==============================
+    # ======================================
+    # MÉTODOS PRINCIPALES
+    # ======================================
 
     def confirmar(self):
 
@@ -99,10 +104,10 @@ class Reserva:
                     "Solo se puede confirmar una reserva creada"
                 )
 
-            # valida si el servicio está disponible
+            # Validar disponibilidad del servicio
             self._servicio.validar_disponibilidad()
 
-            # cálculo con impuesto y descuento
+            # Calcular costo total
             self._total = self._servicio.calcular_costo(
                 self._cantidad,
                 impuesto=0.19,
@@ -122,10 +127,15 @@ class Reserva:
                 f"Total: ${self._total}"
             )
 
+        # Deja pasar excepciones del sistema
+        except SoftwareFJError:
+            raise
+
+        # Captura errores inesperados
         except Exception as e:
 
             registrar_error(
-                "Error al confirmar reserva",
+                "Error inesperado al confirmar reserva",
                 e
             )
 
@@ -167,14 +177,14 @@ class Reserva:
 
         return "Reserva procesada"
 
-    # ==============================
+    # ======================================
     # POLIMORFISMO
-    # ==============================
+    # ======================================
 
     def mostrar_info(self):
 
         return (
-            f"[Reserva] "
+            f"[Reserva id={self.id}] "
             f"Cliente: {self._cliente.nombre} | "
             f"Servicio: {self._servicio.nombre} | "
             f"Cantidad: {self._cantidad} | "
@@ -190,6 +200,7 @@ class Reserva:
 
         return (
             f"Reserva("
+            f"id='{self.id}', "
             f"cliente='{self._cliente.nombre}', "
             f"estado='{self._estado}', "
             f"total={self._total}"
